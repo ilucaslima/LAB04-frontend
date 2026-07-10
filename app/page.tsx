@@ -1,9 +1,8 @@
-import Image from "next/image";
-
+import DashBoardHeader from "./components/DashboardHeader ";
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center">
-      <h1 className="text-4xl font-bold">Talkflow 🚀</h1>
+     <DashBoardHeader />
     </main>
   );
 }
