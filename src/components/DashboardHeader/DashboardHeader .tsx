@@ -3,7 +3,7 @@ import { FaRegCheckCircle } from "react-icons/fa";
 import { LuClipboardList } from "react-icons/lu";
 import { TbCalendarTime } from "react-icons/tb";
 
-import CardsHeader   from "../components/CardsHeader"
+import CardsHeader   from "./CardsHeader"
 
 
 export default function DashBoardHeader(){
