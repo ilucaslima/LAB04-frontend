@@ -1,16 +1,20 @@
-import Image from "next/image";
-import Header from "../components/Header"; // Importando o header
+import Sidebar from "../components/Sidebar";
+import Header from "../components/Header";
+import KanbanBoard from "../components/KanbanBoard";
 
 export default function Home() {
   return (
-    <main>
-      {/* Adicionamos o Header aqui em cima */}
-      <Header />
-      
-      {/* O resto da sua página */}
-      <div className="flex min-h-screen items-center justify-center">
-        <h1 className="text-4xl font-bold">Talkflow 🚀</h1>
+    <div className="flex h-screen bg-gray-50 overflow-hidden">
+      {/* Menu Lateral esquerdo */}
+      <Sidebar />
+
+      {/* Área Principal (Direita) */}
+      <div className="flex-1 flex flex-col min-w-0 overflow-y-auto">
+        <Header />
+        <main className="flex-1">
+          <KanbanBoard />
+        </main>
       </div>
-    </main>
+    </div>
   );
 }

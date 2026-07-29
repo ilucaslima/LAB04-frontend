@@ -8,7 +8,7 @@ interface UsuarioLogado {
   fotoUrl: string;
 }
 
-// Renomeei de App para Header para ficar mais profissional
+
 export default function Header() {
   const usuarioAtual: UsuarioLogado = {
     nome: "Paulo",
